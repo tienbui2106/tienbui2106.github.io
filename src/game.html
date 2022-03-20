@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Image Puzzle Game</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+    <!-- quit button -->
+    <button class="button-border button-font button-background button-animation" type="button" id="quit">Quit</button>
+
+    <!-- move counter -->
+    <div class="button-font" id="move-counter">Moves: 0</div>
+
+    <!-- game table -->
+    <div id="game-table">
+        <!-- puzzle container -->
+        <div id="puzzle-container"></div>
+
+        <div id="control">
+            <!-- reset button -->
+            <button class="button-border button-font button-background button-animation" type="button" id="reset">Reset</button>
+
+            <!-- shuffle button -->
+            <button class="button-border button-font button-background button-animation" type="button" id="shuffle">Shuffle</button>
+
+        </div>
+    </div>
+
+    <!-- answer container -->
+    <div id="answer-container">
+        <!-- answer image -->
+        <div id="answer-image"></div>
+
+        <div id="left-curtain" class="curtain"></div>
+
+        <div id="right-curtain" class="curtain"></div>
+
+        <!-- show/hide answer button -->
+        <button class="button-border button-font button-background button-animation" type="button" id="answer">Show Answer</button>
+    </div>
+
+    <!-- picture effect when click reset -->
+    <div id="nyan-cat"></div>
+
+    <!-- puzzle solve notifications -->
+    <div class="button-font" id="puzzle-solve"></div>
+</body>
+
+</html>
